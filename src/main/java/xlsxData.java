@@ -17,7 +17,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Main {
+public class xlsxData {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
@@ -25,10 +25,9 @@ public class Main {
         driver.get("https://web.whatsapp.com/");
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"side\"]/div[1]/div/label/div/div[2]")));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"side\"]/div[1]/div/label/div")));
 
-        File file = new File("Whatsapp Automation Data.xlsx");
+        File file = new File("data/Whatsapp Automation Data.xlsx");
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
             XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);

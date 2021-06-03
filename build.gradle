@@ -13,14 +13,22 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    /** Selenium */
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.141.59'
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.141.59'
+
+    /** Apache POI - .xlsx & .xls */
     // https://mvnrepository.com/artifact/org.apache.poi/poi
     implementation group: 'org.apache.poi', name: 'poi', version: '5.0.0'
     // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
     implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.0.0'
     // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas
     implementation group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+
+    /** OpenCSV - .csv */
+    // https://mvnrepository.com/artifact/com.opencsv/opencsv
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.4'
 }
