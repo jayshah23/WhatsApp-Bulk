@@ -1,17 +1,21 @@
 # WhatsApp-Bulk
-This is a simple WhatsApp automation script. You just need to provide a **.xlsx** sheet and hit the run button.
+This is a simple WhatsApp automation script. You just need to provide a **xlsx/xls/csv** file and hit the run button.
+1. [Code for csv](https://github.com/jayshah23/WhatsApp-Bulk/blob/main/src/main/java/csvData.java)
+2. [Code for xls](https://github.com/jayshah23/WhatsApp-Bulk/blob/main/src/main/java/xlsData.java)
+3. [Code for xlsx](https://github.com/jayshah23/WhatsApp-Bulk/blob/main/src/main/java/xlsxData.java)
+4. [Code for combined sheets](https://github.com/jayshah23/WhatsApp-Bulk/blob/main/src/main/java/)
 
 ## Note:
 Do use chrome web-driver depending on your Chrome version.
 You can find chrome web-driver from below link.
 https://chromedriver.chromium.org/downloads
 
-Excel sheet should have only 2 colomns in following order
-1A contact number 1B message 2A contact number 2B message and so on... or dowload [Whatsapp Automation Data.xlsx](https://github.com/jayshah23/WhatsApp-Bulk/files/6570758/Whatsapp.Automation.Data.xlsx)
+File should have only 2 colomns in following order
+1A contact number 1B message 2A contact number 2B message and so on... or dowload any of the following
+1. [Whatsapp Automation Data.xls](https://github.com/jayshah23/WhatsApp-Bulk/files/6599395/Whatsapp.Automation.Data.xls)
+2. [Whatsapp Automation Data.xlsx](https://github.com/jayshah23/WhatsApp-Bulk/files/6599397/Whatsapp.Automation.Data.xlsx)
+3. [Whatsapp Automation Data.csv](https://github.com/jayshah23/WhatsApp-Bulk/files/6599398/Whatsapp.Automation.Data.csv)
 
-
-Make sure you have saved those numbers or had a chat with them.
-
-Make sure that your **.xlsx** file name and file name in code are same.
+Make sure you either have saved those numbers or atleast had a chat with them. Alos, file name containing data and file name in code are same.
 
 Happy Spamming!!😉
