@@ -32,12 +32,14 @@ public class allIn1 {
     private static final String logOutXPath = "//*[@id=\"side\"]/header/div[2]/div/span/div[3]/span/div[1]/ul/li[7]";
 
     public static void main(String[] args) {
-        String[] files = new String[]{"Whatsapp Automation Data.xls", "Whatsapp Automation Data.xlsx", "Whatsapp Automation Data.csv"};
-        Random random = new Random();
-        int fileIndex = random.nextInt(files.length);
-        String randomFileName = files[fileIndex];
+//        String[] files = new String[]{"Whatsapp Automation Data.xls", "Whatsapp Automation Data.xlsx", "Whatsapp Automation Data.csv"};
+//        Random random = new Random();
+//        int fileIndex = random.nextInt(files.length);
+//        String randomFileName = files[fileIndex];
+//
+//        File file = new File("data/"+randomFileName);
 
-        File file = new File("data/"+randomFileName);
+        File file = new File("data/"+"your file name");
         String fileName = file.toString(), extension;
         int index = fileName.lastIndexOf('.');
         extension = fileName.substring(index + 1);
@@ -103,11 +105,11 @@ public class allIn1 {
         } catch (FileNotFoundException e) {
             System.out.println(e.getLocalizedMessage());
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println(e.getLocalizedMessage());
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getLocalizedMessage());
         } catch (CsvValidationException e) {
-            e.printStackTrace();
+            System.out.println(e.getLocalizedMessage());
         }
 
         driver.quit();
