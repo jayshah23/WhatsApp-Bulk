@@ -29,7 +29,8 @@ public class allIn1 {
     private static final String messageBoxXPath = "//*[@id=\"main\"]/footer/div[1]/div[2]/div[1]";
     private static final String enterBtnXPath = "//*[@id=\"main\"]/footer/div[1]/div[3]/button";
     private static final String settingsXPath = "//*[@id=\"side\"]/header/div[2]/div/span/div[3]/div/span";
-    private static final String logOutXPath = "//*[@id=\"side\"]/header/div[2]/div/span/div[3]/span/div[1]/ul/li[7]";
+    private static final String logOutText = "//*[text()='Log out']";
+    private static final String logOutConfirmXPath = "//*[@id=\"app\"]/div/span[2]/div/div/div/div/div/div/div[3]/div/div[2]/div/div";
 
     public static void main(String[] args) {
 //        String[] files = new String[]{"Whatsapp Automation Data.xls", "Whatsapp Automation Data.xlsx", "Whatsapp Automation Data.csv"};
@@ -99,7 +100,9 @@ public class allIn1 {
 
             driver.findElement(By.xpath(settingsXPath)).click();
             Thread.sleep(SLEEP1);
-            driver.findElement(By.xpath(logOutXPath)).click();
+            driver.findElement(By.xpath(logOutText)).click();
+            Thread.sleep(SLEEP1);
+            driver.findElement(By.xpath(logOutConfirmXPath)).click();
             Thread.sleep(SLEEP1);
 
         } catch (FileNotFoundException e) {
